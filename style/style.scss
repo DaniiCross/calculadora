@@ -1,0 +1,183 @@
+@use 'tema2';
+@use 'tema3';
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;400&display=swap');
+//tema1
+
+$color-tema1: hsl(222, 26%, 31%);
+$color-fondo-cal1 :hsl(223, 31%, 20%);
+$color-fondo-screem1:hsl(224, 36%, 15%);
+$color-btn-res:hsl(225, 21%, 49%);
+$color-sombr-abtn-res: hsl(224, 28%, 35%);
+$color-btn-igual1: hsl(6, 63%, 50%);
+$color-sombra-btn-igual1:hsl(6, 70%, 34%);
+$color-btn-general:hsl(30, 25%, 89%);
+$color-sombra-btn-general:hsl(28, 16%, 65%);
+$color-letra :hsl(221, 14%, 31%);
+$color-letra-screem: hsl(0, 0, 100%);
+
+.body{
+    margin:0;
+    padding: 0;
+    background-color: $color-tema1;
+    align-items: center;
+
+
+    main{
+        margin: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .calculadora {
+        width: 400px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: 130px repeat(8);
+        column-gap:2px ;
+        row-gap: 0px;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 20px;
+
+        .btn-tema{
+            display: flex;
+            grid-column: 1/-1;
+            height: 40px;
+            justify-content: space-between;
+        }
+
+        .btn-group{
+            flex-direction:row;
+            align-items: right;
+            height: 10px;
+            margin-top: 10px;
+            transform: scale(0.6);
+        }
+
+        .btn-group p{
+            color: $color-letra-screem;
+            margin-right: 20px;
+            font-size: 11px;
+        }
+
+        div>h3{
+            text-align: left;
+            padding-left: 10px;
+            color: $color-letra-screem;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .screem {
+            height: 100px;
+            background-color: $color-fondo-screem1;
+            grid-column: 1/5;
+            border-radius: 5px;
+            text-align: end;
+            font-size: 18px;
+            font-weight: 700;
+
+            .texto-superior {
+                color: white;
+                font-size: 1.2rem;
+                padding: 5px 20px 20px 0px;
+                font-weight: 700;
+            }
+
+            .texto-inferior {
+                color: white;
+                font-size: 2rem;
+                padding: -10px 60px 30px px;
+                font-weight: 700;
+            }
+
+        }
+    }
+
+    .calculadora button {
+        background-color: $color-btn-general;
+        border-radius: 10%;
+        margin:0px;
+        transform: scale(0.8);
+        width: 100px;
+        height: 50px;
+        font-family: spartan;
+        font-weight: 700;
+        align-items: center;
+
+    }
+
+    button.numero{
+        font-family: spartan;
+        box-shadow: 2px 2px $color-sombra-btn-general;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    #igual{
+        background-color: $color-btn-igual1;
+        box-shadow: 2px 2px $color-sombra-btn-igual1;
+        grid-column: 3/5;
+        width: 200px;
+        color: $color-letra-screem;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    #igual:hover{
+        background-color: $color-sombra-btn-igual1;
+    }
+
+    #borrar{
+        background-color: $color-btn-res;
+        color: $color-letra-screem;
+        box-shadow: 3px 3px $color-sombr-abtn-res;  
+    }
+
+    #borrar:hover{
+        background-color: $color-sombr-abtn-res;
+    }
+
+    #borrar-todo {
+        grid-template-columns: 3fr;
+        background-color: $color-btn-res;
+        color: $color-letra-screem;
+        box-shadow: 3px 3px $color-sombr-abtn-res;
+        grid-column: 1/3;
+        width: 200px;
+    }
+
+    #borrar-todo:hover{
+        background-color: $color-sombr-abtn-res;
+    }
+
+    .calculadora button:hover {
+        background-color: silver;
+    }
+    button.operador{
+        font-size: 32px;
+    }
+
+    .attribution {
+        background-color: white;
+        text-align: center;
+        color: black;
+    }
+
+    .attribution a{
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+
+
+
+

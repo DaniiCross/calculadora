@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;400&display=swap");
+.body.tema2 {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0deg, 0%, 90%);
+  align-items: center;
+}
+.body.tema2 main {
+  margin: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.body.tema2 .container {
+  display: flex;
+  justify-content: center;
+}
+.body.tema2 .calculadora {
+  width: 400px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 130px repeat(8);
+  column-gap: 2px;
+  row-gap: 0px;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+.body.tema2 .calculadora .btn-tema {
+  display: flex;
+  grid-column: 1/-1;
+  height: 40px;
+  justify-content: space-between;
+}
+.body.tema2 .calculadora .btn-group {
+  flex-direction: row;
+  align-items: right;
+  height: 10px;
+  margin-top: 10px;
+  transform: scale(0.6);
+  color: hsl(60deg, 10%, 19%);
+}
+.body.tema2 .calculadora .btn-group p {
+  color: hsl(60deg, 10%, 19%);
+  margin-right: 20px;
+  font-size: 11px;
+}
+.body.tema2 .calculadora div > h3 {
+  text-align: left;
+  padding-left: 10px;
+  color: hsl(60deg, 10%, 19%);
+  font-size: 18px;
+  font-weight: 700;
+}
+.body.tema2 .calculadora .screem {
+  height: 100px;
+  background-color: hsl(0deg, 0%, 93%);
+  grid-column: 1/5;
+  border-radius: 5px;
+  text-align: end;
+  font-size: 18px;
+}
+.body.tema2 .calculadora .screem .texto-superior {
+  color: hsl(60deg, 10%, 19%);
+  font-size: 1.2rem;
+  padding: 5px 20px 20px 0px;
+}
+.body.tema2 .calculadora .screem .texto-inferior {
+  color: hsl(60deg, 10%, 19%);
+  font-size: 2rem;
+  padding: -10px 60px 30px px;
+}
+.body.tema2 .calculadora button {
+  background-color: hsl(45deg, 7%, 89%);
+  box-shadow: 2px 2px hsl(35deg, 11%, 61%);
+  border-radius: 10%;
+  margin: 0px;
+  transform: scale(0.8);
+  width: 100px;
+  height: 50px;
+  font-family: spartan;
+  font-weight: 700;
+  align-items: center;
+}
+.body.tema2 button.numero {
+  font-family: spartan;
+  font-size: 32px;
+  font-weight: 700;
+}
+.body.tema2 #igual {
+  background-color: hsl(25deg, 98%, 40%);
+  box-shadow: hsl(25deg, 99%, 27%);
+  grid-column: 3/5;
+  width: 200px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 32px;
+  font-weight: 700;
+}
+.body.tema2 #igual:hover {
+  background-color: hsl(25deg, 99%, 27%);
+}
+.body.tema2 #borrar {
+  background-color: hsl(185deg, 42%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: hsl(185deg, 58%, 25%);
+}
+.body.tema2 #borrar:hover {
+  background-color: hsl(185deg, 58%, 25%);
+}
+.body.tema2 #borrar-todo {
+  grid-template-columns: 3fr;
+  background-color: hsl(185deg, 42%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: hsl(185deg, 58%, 25%);
+  grid-column: 1/3;
+  width: 200px;
+}
+.body.tema2 #borrar-todo:hover {
+  background-color: hsl(185deg, 58%, 25%);
+}
+.body.tema2 .calculadora button:hover {
+  background-color: silver;
+}
+.body.tema2 button.operador {
+  font-size: 32px;
+}
+.body.tema2 .attribution {
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+.body.tema2 .attribution a {
+  text-decoration: none;
+  color: black;
+}
+
+.body.tema3 {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(268deg, 75%, 9%);
+  align-items: center;
+}
+.body.tema3 main {
+  margin: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.body.tema3 .container {
+  display: flex;
+  justify-content: center;
+}
+.body.tema3 .calculadora {
+  width: 400px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 130px repeat(8);
+  column-gap: 2px;
+  row-gap: 0px;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+.body.tema3 .calculadora .btn-tema {
+  display: flex;
+  grid-column: 1/-1;
+  height: 40px;
+  justify-content: space-between;
+}
+.body.tema3 .calculadora .btn-group {
+  flex-direction: row;
+  align-items: right;
+  height: 10px;
+  margin-top: 10px;
+  transform: scale(0.6);
+}
+.body.tema3 .calculadora .btn-group p {
+  color: hsl(52deg, 100%, 62%);
+  margin-right: 20px;
+  font-size: 11px;
+}
+.body.tema3 .calculadora div > h3 {
+  text-align: left;
+  padding-left: 10px;
+  color: hsl(52deg, 100%, 62%);
+  font-size: 18px;
+  font-weight: 700;
+}
+.body.tema3 .calculadora .screem {
+  height: 100px;
+  background-color: hsl(268deg, 71%, 12%);
+  grid-column: 1/5;
+  border-radius: 5px;
+  text-align: end;
+  font-size: 18px;
+  font-weight: 700;
+}
+.body.tema3 .calculadora .screem .texto-superior {
+  color: hsl(52deg, 100%, 62%);
+  font-size: 1.2rem;
+  padding: 5px 20px 20px 0px;
+  font-weight: 700;
+}
+.body.tema3 .calculadora .screem .texto-inferior {
+  color: hsl(52deg, 100%, 62%);
+  font-size: 2rem;
+  padding: -10px 60px 30px px;
+  font-weight: 700;
+}
+.body.tema3 .calculadora button {
+  background-color: hsl(268deg, 47%, 21%);
+  border-radius: 10%;
+  margin: 0px;
+  transform: scale(0.8);
+  width: 100px;
+  height: 50px;
+  font-family: spartan;
+  font-weight: 700;
+  align-items: center;
+}
+.body.tema3 button.numero {
+  font-family: spartan;
+  box-shadow: 2px 2px hsl(290deg, 70%, 36%);
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(52deg, 100%, 62%);
+}
+.body.tema3 .numero:hover {
+  background-color: hsl(290deg, 70%, 36%);
+}
+.body.tema3 #igual {
+  background-color: hsl(176deg, 100%, 44%);
+  box-shadow: 2px 2px hsl(177deg, 92%, 70%);
+  grid-column: 3/5;
+  width: 200px;
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+}
+.body.tema3 #igual:hover {
+  background-color: hsl(177deg, 92%, 70%);
+}
+.body.tema3 #borrar {
+  background-color: hsl(281deg, 89%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 3px 3px hsl(285deg, 91%, 52%);
+}
+.body.tema3 #borrar:hover {
+  background-color: hsl(285deg, 91%, 52%);
+}
+.body.tema3 #borrar-todo {
+  grid-template-columns: 3fr;
+  background-color: hsl(281deg, 89%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 3px 3px hsl(285deg, 91%, 52%);
+  grid-column: 1/3;
+  width: 200px;
+}
+.body.tema3 #borrar-todo:hover {
+  background-color: hsl(285deg, 91%, 52%);
+}
+.body.tema3 .calculadora button:hover {
+  background-color: silver;
+}
+.body.tema3 button.operador {
+  font-size: 32px;
+  color: hsl(52deg, 100%, 62%);
+}
+.body.tema3 .attribution {
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+.body.tema3 .attribution a {
+  text-decoration: none;
+  color: black;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(222deg, 26%, 31%);
+  align-items: center;
+}
+.body main {
+  margin: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.body .container {
+  display: flex;
+  justify-content: center;
+}
+.body .calculadora {
+  width: 400px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 130px repeat(8);
+  column-gap: 2px;
+  row-gap: 0px;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+.body .calculadora .btn-tema {
+  display: flex;
+  grid-column: 1/-1;
+  height: 40px;
+  justify-content: space-between;
+}
+.body .calculadora .btn-group {
+  flex-direction: row;
+  align-items: right;
+  height: 10px;
+  margin-top: 10px;
+  transform: scale(0.6);
+}
+.body .calculadora .btn-group p {
+  color: hsl(0deg, 0%, 100%);
+  margin-right: 20px;
+  font-size: 11px;
+}
+.body .calculadora div > h3 {
+  text-align: left;
+  padding-left: 10px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 18px;
+  font-weight: 700;
+}
+.body .calculadora .screem {
+  height: 100px;
+  background-color: hsl(224deg, 36%, 15%);
+  grid-column: 1/5;
+  border-radius: 5px;
+  text-align: end;
+  font-size: 18px;
+  font-weight: 700;
+}
+.body .calculadora .screem .texto-superior {
+  color: white;
+  font-size: 1.2rem;
+  padding: 5px 20px 20px 0px;
+  font-weight: 700;
+}
+.body .calculadora .screem .texto-inferior {
+  color: white;
+  font-size: 2rem;
+  padding: -10px 60px 30px px;
+  font-weight: 700;
+}
+.body .calculadora button {
+  background-color: hsl(30deg, 25%, 89%);
+  border-radius: 10%;
+  margin: 0px;
+  transform: scale(0.8);
+  width: 100px;
+  height: 50px;
+  font-family: spartan;
+  font-weight: 700;
+  align-items: center;
+}
+.body button.numero {
+  font-family: spartan;
+  box-shadow: 2px 2px hsl(28deg, 16%, 65%);
+  font-size: 32px;
+  font-weight: 700;
+}
+.body #igual {
+  background-color: hsl(6deg, 63%, 50%);
+  box-shadow: 2px 2px hsl(6deg, 70%, 34%);
+  grid-column: 3/5;
+  width: 200px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 32px;
+  font-weight: 700;
+}
+.body #igual:hover {
+  background-color: hsl(6deg, 70%, 34%);
+}
+.body #borrar {
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 3px 3px hsl(224deg, 28%, 35%);
+}
+.body #borrar:hover {
+  background-color: hsl(224deg, 28%, 35%);
+}
+.body #borrar-todo {
+  grid-template-columns: 3fr;
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 3px 3px hsl(224deg, 28%, 35%);
+  grid-column: 1/3;
+  width: 200px;
+}
+.body #borrar-todo:hover {
+  background-color: hsl(224deg, 28%, 35%);
+}
+.body .calculadora button:hover {
+  background-color: silver;
+}
+.body button.operador {
+  font-size: 32px;
+}
+.body .attribution {
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+.body .attribution a {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

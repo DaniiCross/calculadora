@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;400&display=swap');
+//tema3
+
+$color-tema3:hsl(268, 75%, 9%);
+$color-fondo-cal1 :hsl(223, 31%, 20%);
+$color-fondo-screem3:hsl(268, 71%, 12%);
+$color-btn-res3:hsl(281, 89%, 26%);
+$color-sombr-abtn-res3: hsl(285, 91%, 52%);
+$color-btn-igual3: hsl(176, 100%, 44%);
+$color-sombra-btn-igual3:hsl(177, 92%, 70%);
+$color-btn-general3:hsl(268, 47%, 21%);
+$color-sombra-btn-general3:hsl(290, 70%, 36%);
+$color-letra :hsl(52, 100%, 62%);
+$color-letra-screem: hsl(0, 0, 100%);
+
+
+.body.tema3{
+    margin:0;
+    padding: 0;
+    background-color: $color-tema3;
+    align-items: center;
+
+
+    main{
+        margin: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .calculadora {
+        width: 400px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: 130px repeat(8);
+        column-gap:2px ;
+        row-gap: 0px;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 20px;
+
+        .btn-tema{
+            display: flex;
+            grid-column: 1/-1;
+            height: 40px;
+            justify-content: space-between;
+        }
+
+        .btn-group{
+            flex-direction:row;
+            align-items: right;
+            height: 10px;
+            margin-top: 10px;
+            transform: scale(0.6);
+        }
+
+        .btn-group p{
+            color: $color-letra;
+            margin-right: 20px;
+            font-size: 11px;
+        }
+
+        div>h3{
+            text-align: left;
+            padding-left: 10px;
+            color: $color-letra;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .screem {
+            height: 100px;
+            background-color: $color-fondo-screem3;
+            grid-column: 1/5;
+            border-radius: 5px;
+            text-align: end;
+            font-size: 18px;
+            font-weight: 700;
+
+            .texto-superior {
+                color: $color-letra;
+                font-size: 1.2rem;
+                padding: 5px 20px 20px 0px;
+                font-weight: 700;
+            }
+
+            .texto-inferior {
+                color: $color-letra;
+                font-size: 2rem;
+                padding: -10px 60px 30px px;
+                font-weight: 700;
+            }
+
+        }
+    }
+
+    .calculadora button {
+        background-color: $color-btn-general3;
+        border-radius: 10%;
+        margin:0px;
+        transform: scale(0.8);
+        width: 100px;
+        height: 50px;
+        font-family: spartan;
+        font-weight: 700;
+        align-items: center;
+
+    }
+
+    button.numero{
+        font-family: spartan;
+        box-shadow: 2px 2px $color-sombra-btn-general3;
+        font-size: 32px;
+        font-weight: 700;
+        color: $color-letra;
+    }
+
+    .numero:hover{
+        background-color: $color-sombra-btn-general3;
+    }
+
+    #igual{
+        background-color: $color-btn-igual3;
+        box-shadow: 2px 2px $color-sombra-btn-igual3;
+        grid-column: 3/5;
+        width: 200px;
+        color: black;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    #igual:hover{
+        background-color: $color-sombra-btn-igual3;
+    }
+
+    #borrar{
+        background-color: $color-btn-res3;
+        color: $color-letra-screem;
+        box-shadow: 3px 3px $color-sombr-abtn-res3;  
+    }
+
+    #borrar:hover{
+        background-color: $color-sombr-abtn-res3;
+    }
+
+    #borrar-todo {
+        grid-template-columns: 3fr;
+        background-color: $color-btn-res3;
+        color: $color-letra-screem;
+        box-shadow: 3px 3px $color-sombr-abtn-res3;
+        grid-column: 1/3;
+        width: 200px;
+    }
+
+    #borrar-todo:hover{
+        background-color: $color-sombr-abtn-res3;
+    }
+
+    .calculadora button:hover {
+        background-color: silver;
+    }
+    button.operador{
+        font-size: 32px;
+        color:$color-letra
+    }
+
+    .attribution {
+        background-color: white;
+        text-align: center;
+        color: black;
+    }
+
+    .attribution a{
+        text-decoration: none;
+        color: black;
+    }
+}
